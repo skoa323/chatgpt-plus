@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GPT 代充服务</title>
+  <style>
+    :root {
+      --primary: #1e90ff;
+      --bg: #f5f7fa;
+      --card-bg: #ffffff;
+      --text: #333333;
+      --shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+      --radius: 16px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", "PingFang SC", sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 48px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin: 0 0 8px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 64px;
+    }
+
+    /* Contact Section */
+    #contact {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 32px 24px;
+      box-shadow: var(--shadow);
+      text-align: center;
+    }
+
+    #contact h2 {
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+
+    #contact p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    #contact .wechat {
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Pricing Section */
+    #pricing h2 {
+      text-align: center;
+      margin-bottom: 32px;
+      font-size: 1.8rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+
+    .card {
+      background: var(--card-bg);
+      border-radius: var(--radius);
+      padding: 24px 20px;
+      box-shadow: var(--shadow);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .card h3 {
+      font-size: 1.4rem;
+      margin: 0 0 12px;
+    }
+
+    .price {
+      font-size: 2rem;
+      font-weight: 700;
+      margin: 0 0 12px;
+      color: var(--primary);
+    }
+
+    .duration {
+      font-size: 0.95rem;
+      color: #666;
+      margin-bottom: 16px;
+    }
+
+    .support {
+      font-size: 0.95rem;
+      color: #555;
+      margin-top: auto;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1e1e1e;
+        --card-bg: #2b2b2b;
+        --text: #eaeaea;
+        --shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>GPT 代充服务</h1>
+    <p>安全、快捷、靠谱的 GPT 额度充值解决方案</p>
+  </header>
+
+  <main>
+    <!-- Contact placed BEFORE pricing for maximum visibility -->
+    <section id="contact">
+      <h2>联系我们</h2>
+      <p>添加微信 <span class="wechat">your_wechat_id</span> 了解更多详情或下单。</p>
+    </section>
+
+    <section id="pricing">
+      <h2>套餐价格</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>1 个月</h3>
+          <div class="price">¥120</div>
+          <div class="duration">30 天</div>
+          <div class="support">套餐期间全程售后支持</div>
+        </div>
+        <div class="card">
+          <h3>1 季度</h3>
+          <div class="price">¥340</div>
+          <div class="duration">90 天</div>
+          <div class="support">套餐期间全程售后支持</div>
+        </div>
+        <div class="card">
+          <h3>半年</h3>
+          <div class="price">¥660</div>
+          <div class="duration">180 天</div>
+          <div class="support">套餐期间全程售后支持</div>
+        </div>
+        <div class="card">
+          <h3>1 年</h3>
+          <div class="price">¥1200</div>
+          <div class="duration">365 天</div>
+          <div class="support">套餐期间全程售后支持</div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
